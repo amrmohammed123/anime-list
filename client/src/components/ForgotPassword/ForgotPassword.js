@@ -35,8 +35,8 @@ class ForgotPassword extends Component {
             throw Error(response.statusText);
           }
           this.setState({
-            errorMessage: "Couldn't send email",
-            successMessage: "",
+            errorMessage: "",
+            successMessage: "Email Sent Successfully",
             showCircularProgress: false
           });
         })
