@@ -9,3 +9,7 @@ Front End: React,Redux, Redux-thunk, React-router-dom, material-ui and sass
 Back End: Node.js, Express.js
 
 Database: mongodb
+
+
+live version:
+https://anime-list1.herokuapp.com/
