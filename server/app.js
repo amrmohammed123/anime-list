@@ -8,7 +8,12 @@ const passport = require("passport");
 const bcrypt = require("bcryptjs");
 
 //use cors
-app.use(cors({ origin: process.env.CLIENT_URL, credentials: true }));
+app.use(
+  cors({
+    origin: [process.env.CLIENT_URL, process.env.CLIENT_URL2],
+    credentials: true
+  })
+);
 // set static files folder
 app.use(express.static("public"));
 // set view engine
