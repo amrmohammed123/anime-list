@@ -1,0 +1,38 @@
+.Review {
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  .author {
+    margin-top: 0;
+    a {
+      &:hover {
+        opacity: 0.7;
+      }
+      text-decoration: none;
+      color: #000;
+    }
+  }
+  .content {
+    font-size: 18px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+  .likes {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+    .likeIcon {
+      margin-right: 5px;
+      color: #115293;
+    }
+  }
+  .likeButton {
+    &:hover {
+      background-color: #115293;
+      opacity: 0.9;
+    }
+    background-color: #115293;
+    text-transform: capitalize;
+    margin-top: 10px;
+  }
+}

@@ -1,0 +1,33 @@
+.white {
+  color: #fff !important;
+  border: 1px solid #fff !important;
+  border-radius: 5px;
+  &:hover {
+    border-width: 0px !important;
+  }
+  &:focuse {
+    border-color: #fff !important;
+  }
+}
+
+.Signup {
+  margin-top: 20px;
+  width: 700px !important;
+  max-width: 100%;
+  &:hover {
+    background-color: transparent !important;
+  }
+  .signupInput {
+    margin-bottom: 10px;
+    &:hover {
+      border: 1px solid #fff !important;
+      border-radius: 5px;
+    }
+    &:focuse {
+      border-color: #fff !important;
+    }
+  }
+  .signupButton {
+    text-transform: capitalize;
+  }
+}

@@ -1,0 +1,63 @@
+.ProfileCard {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  .image {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+    border-radius: 5px;
+  }
+  .infoContainer {
+    margin-right: auto;
+    max-width: 100px;
+    .title {
+      &:hover {
+        opacity: 0.9;
+      }
+      text-decoration: none;
+      font-size: 10px;
+      word-wrap: break-word;
+    }
+    .status {
+      font-size: 10px;
+      color: #25476a;
+    }
+  }
+
+  .addToListButton {
+    text-transform: capitalize;
+    font-size: 10px;
+    margin-left: 5px;
+    min-width: 0px !important;
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  .ProfileCard {
+    .image {
+      width: 120px;
+      height: 120px;
+    }
+    .infoContainer {
+      max-width: 175px;
+      .title {
+        font-size: 16px;
+      }
+      .status {
+        font-size: 16px;
+      }
+    }
+    .addToListButton {
+      font-size: 16px;
+    }
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .ProfileCard {
+    .infoContainer {
+      max-width: 400px;
+    }
+  }
+}

@@ -1,0 +1,80 @@
+.dark {
+  background-color: #1f1f1f !important;
+}
+.light {
+  background-color: #fff !important;
+}
+.rightPadding {
+  padding-right: 0 !important;
+}
+.Navbar {
+  justify-content: space-between;
+  padding-left: 16px !important;
+  padding-right: 16px !important;
+
+  .drawerIcon {
+    color: #fff;
+  }
+
+  .desktopNav {
+    display: none;
+  }
+
+  .search {
+    position: relative;
+    border-radius: 15px;
+    width: 450px;
+    max-width: 100%;
+
+    .searchRoot {
+      color: #ccc;
+      width: 100%;
+    }
+
+    .searchIcon {
+      position: absolute;
+      left: 12px;
+      top: 3px;
+    }
+
+    .searchInput {
+      margin: 0 10px 0 42px;
+    }
+  }
+  .moreIcon {
+    color: #fff;
+  }
+}
+
+.drawerList {
+  width: 170px;
+}
+
+/* links style*/
+.drawerLink,
+.menuLink {
+  color: #000;
+  text-decoration: none;
+}
+
+.link {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* desktop style */
+@media only screen and (min-width: 900px) {
+  .Navbar {
+    .desktopNav {
+      display: block;
+    }
+
+    .drawerIcon {
+      display: none;
+    }
+
+    .btn {
+      text-transform: capitalize;
+    }
+  }
+}

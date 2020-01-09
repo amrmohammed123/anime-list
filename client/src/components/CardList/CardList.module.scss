@@ -1,0 +1,23 @@
+.CardList {
+  display: grid;
+  grid-template-columns: auto;
+  margin: 80px 20px 0 20px;
+  .card {
+    margin: 0 auto 20px auto;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .CardList {
+    grid-template-columns: auto auto;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .CardList {
+    grid-template-columns: auto auto auto;
+  }
+}
+@media only screen and (min-width: 1150px) {
+  .CardList {
+    grid-template-columns: auto auto auto auto;
+  }
+}
