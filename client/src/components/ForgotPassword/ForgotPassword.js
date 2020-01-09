@@ -22,7 +22,7 @@ class ForgotPassword extends Component {
   handleSubmit = e => {
     e.preventDefault();
     this.setState({ showCircularProgress: true }, () => {
-      fetch("http://localhost:4000/password/forgot", {
+      fetch(`${process.env.REACT_APP_SERVER_URL}/password/forgot`, {
         headers: {
           Accept: "application/json",
           "Content-Type": "application/json"
