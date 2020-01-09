@@ -382,7 +382,7 @@ class ItemDetails extends Component {
               </div>
             ) : (
               <Button
-                variant={props.theme === "dark" ? "contained" : "outlined"}
+                variant={this.props.theme === "dark" ? "contained" : "outlined"}
                 color="primary"
                 className={styles.addToListButton}
                 onClick={() => this.handleOpen("add")}
