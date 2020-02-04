@@ -15,7 +15,7 @@ const mapStateToProps = state => ({
 });
 
 class ForgotPassword extends Component {
-  state = { email: "", errorMessage: "", showCircularProgress: false };
+  state = { email: "", errorMessage: "", successMessage:"", showCircularProgress: false };
   handleChange = e => {
     this.setState({ email: e.target.value });
   };
