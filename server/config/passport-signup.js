@@ -33,16 +33,8 @@ module.exports = (User, passport, LocalStrategy, bcrypt) => {
                       username: username,
                       password: hashedPassword,
                       email: req.body.email,
-                      draft: {
-                        title: "",
-                        htmlContent: "",
-                        tags: [],
-                        cover: { public_id: "", link: "", original_name: "" }
-                      },
-                      photo:
-                        "https://yogasantosha.ca/wp-content/uploads/2018/09/Neutral-placeholder-profile.jpg",
-                      followers: [],
-                      following: []
+                      animeList:[],
+                      mangaList:[]
                     }).save((err, user) => {
                       if (err) return done(err);
                       else return done(null, user);
